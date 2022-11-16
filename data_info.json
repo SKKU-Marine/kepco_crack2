@@ -1,0 +1,92 @@
+{
+    "aihub_shm": {
+        "img_path": "./data/aihub_shm/image/",
+        "label_path": "./data/aihub_shm/label/",
+        "total_img": 20,
+        "total_mask": 20,
+        "resolution": [
+            [
+                1440,
+                2560
+            ],
+            [
+                1440,
+                2560
+            ]
+        ],
+        "img_name": "101_7f0ee240-0257-4d3f-a359-87f87bcca64a.tiff",
+        "label_name": "101_7f0ee240-0257-4d3f-a359-87f87bcca64a.png"
+    },
+    "aihub_welcon": {
+        "img_path": "./data/aihub_welcon/image/",
+        "label_path": "./data/aihub_welcon/label/",
+        "total_img": 20,
+        "resolution": [
+            [
+                1440,
+                2560
+            ],
+            [
+                1440,
+                2560
+            ]
+        ],
+        "total_mask": 20,
+        "img_name": "101_fa712a2a-f17e-4690-8246-5bf24d545d0b.jpg",
+        "label_name": "101_fa712a2a-f17e-4690-8246-5bf24d545d0b.png"
+    },
+    "seoul_crack": {
+        "img_path": "./data/seoul_crack/image/",
+        "label_path": "./data/seoul_crack/label/",
+        "total_img": 20,
+        "total_mask": 20,
+        "resolution": [
+            [
+                1440,
+                1080
+            ],
+            [
+                1440,
+                1080
+            ]
+        ],
+        "img_name": "S-210828_N_C_2_R_66166895050-2.jpg",
+        "label_name": "S-210828_N_C_2_R_66166895050-2.png"
+    },
+    "bridge2": {
+        "img_path": "./data/bridge2/image/",
+        "label_path": "./data/bridge2/label/",
+        "total_img": 20,
+        "total_mask": 20,
+        "resolution": [
+            [
+                6336,
+                9504
+            ],
+            [
+                6336,
+                9504
+            ]
+        ],
+        "img_name": "2m (1).JPG",
+        "label_name": "2m (1).png"
+    },
+    "tancheon": {
+        "img_path": "./data/tancheon/image/",
+        "label_path": "./data/tancheon/label/",
+        "total_img": 20,
+        "total_mask": 20,
+        "resolution": [
+            [
+                3648,
+                5472
+            ],
+            [
+                4912,
+                7360
+            ]
+        ],
+        "img_name": "4 (3).JPG",
+        "label_name": "4 (3).png"
+    }
+}
