@@ -23,3 +23,8 @@
   './configs/swin/kepco_crack.py
 * sample dataset is provided in the following directory. 5 datasets are available and used as pre-trained dataset.
 * Crack images are from building, bridges, various infrastructures.
+* User should add dataset as follow.
+  './data/
+      dataset1/
+          image/*.jpg .....
+          label/*.png .....
