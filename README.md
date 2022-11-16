@@ -7,16 +7,16 @@
 
 # Description
 * Train codes are located in the following directory.
-  './main/train/'
+  * './main/train/'
   
 * data preparation codes are located in the following diectory : 
   './main/data_preparation/'
   
 * computation of performance index using sliding inference codes are located in the following directory :
-  './main/inference/'
+  * './main/inference/'
   
 * util functions(inference tool, sliding segmentation etc..) are located in the following directory : 
-  './utils/'
+  * './utils/'
   
 # Customization
 * some train configuration and hyperparameter can be modified in the following code : 
@@ -25,6 +25,6 @@
 * Crack images are from building, bridges, various infrastructures.
 * User should add dataset as follow.
   * './data/
-      *dataset1/
-          *image/*.jpg .....
-          *label/*.png .....
+      * dataset1/
+          * image/*.jpg .....
+          * label/*.png .....
