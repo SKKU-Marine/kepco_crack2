@@ -278,14 +278,14 @@ def main():
                 in_img_dir=osp.join(coco_path, 'images'),
                 in_ann_dir=osp.join(coco_path, 'annotations'),
                 out_img_dir=out_img_dir,
-                out_mask_dir=out_mask_dir,
+                out_mask_dir=out_mask_dir,mask_image
                 is_train=False),
             test_list,
             nproc=nproc)
     else:
         mmcv.track_progress(
             partial(
-                convert_to_trainID,
+                convert_to_trainID,mask_image
                 in_img_dir=osp.join(coco_path, 'images'),
                 in_ann_dir=osp.join(coco_path, 'annotations'),
                 out_img_dir=out_img_dir,

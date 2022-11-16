@@ -6,7 +6,7 @@ model = dict(
     pretrained=None,
     backbone=dict(
         type='SwinTransformer',
-        pretrain_img_size=224,
+        pretrain_img_size=384,
         embed_dims=96,
         patch_size=4,
         window_size=7,
@@ -18,7 +18,7 @@ model = dict(
         qkv_bias=True,
         qk_scale=None,
         patch_norm=True,
-        drop_rate=0.,
+        drop_rate=0.1,
         attn_drop_rate=0.,
         drop_path_rate=0.3,
         use_abs_pos_embed=False,
@@ -34,8 +34,10 @@ model = dict(
         num_classes=19,
         norm_cfg=norm_cfg,
         align_corners=False,
+        #ignore_index = 0,
         loss_decode=dict(
-            type='CrossEntropyLoss', use_sigmoid=False, loss_weight=1.0)),
+            type='CrossEntropyLoss', use_sigmoid=False, loss_weight=1.0,avg_non_ignore=False,
+            class_weight = [0.1, 0.9])), # class_weight = [0.0
     auxiliary_head=dict(
         type='FCNHead',
         in_channels=384,
@@ -47,8 +49,10 @@ model = dict(
         num_classes=19,
         norm_cfg=norm_cfg,
         align_corners=False,
+        #ignore_index = 0,
         loss_decode=dict(
-            type='CrossEntropyLoss', use_sigmoid=False, loss_weight=0.4)),
+            type='CrossEntropyLoss', use_sigmoid=False, loss_weight=1.0, avg_non_ignore=False,
+            class_weight = [0.1, 0.9])),
     # model training and testing settings
     train_cfg=dict(),
     test_cfg=dict(mode='whole'))
